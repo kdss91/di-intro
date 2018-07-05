@@ -2,6 +2,7 @@ package com.springframework;
 
 import com.springframework.controllers.GetterInjectedController;
 import com.springframework.controllers.PropertyInjectedConroller;
+import com.springframework.controllers.ConstructorInjectedController;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
@@ -15,7 +16,7 @@ public class DiIntroApplication {
 
         System.out.println(ctx.getBean(PropertyInjectedConroller.class).sayHello());
         System.out.println(ctx.getBean(GetterInjectedController.class).sayHello());
-        System.out.println(ctx.getBean(GetterInjectedController.class).sayHello());
+        System.out.println(ctx.getBean(ConstructorInjectedController.class).sayHello());
 
     }
 }
